@@ -1,5 +1,18 @@
 {
   "dependencies": {
+    "express": "^5.1.0",
     "lodash": "^4.17.21"
-  }
+  },
+  "name": "nodejs-course",
+  "version": "1.0.0",
+  "description": "This repository is created for testing and practicing a Node.js server. It is designed to help learn and experiment with basic server functionality, middleware, and error handling in Node.js.",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
