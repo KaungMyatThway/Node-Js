@@ -1,13 +1,20 @@
-const http = require('http');
+const http = require("http");
+const fs = require("fs");
 
-const server = http.createServer((req,res) => {
-    res.setHeader('Content-Type', 'text/html')
+const server = http.createServer((req, res) => {
+  res.setHeader("Content-Type", "text/html");
 
-    res.write('<h1>Hello WORLD</h1>');
+  fs.readFile("./views/index.html", (err, data) => {
+    if (err) {
+      console.log(err);
+      res.end();
+    } else {
+      res.write(data);
+      res.end();
+    }
+  });
+});
 
-    res.end();
-})
-
-server.listen(3000,'localhost',() => {
-    console.log('server listion on port 3000');
-})
+server.listen(3000, "localhost", () => {
+  console.log("server listion on port 3000");
+});
