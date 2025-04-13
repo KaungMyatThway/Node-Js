@@ -12,16 +12,16 @@ app.get("/", (req, res) => {
     {title : 'title2', text : 'hello 2'},
     {title : 'title3', text : 'hello 3'}
   ]
-  res.render('index',{blogs});
+  res.render('index',{blogs,title : 'HOME'});
 });
 
 app.get("/about", (req, res) => {
-    res.render('about');
+    res.render('about', {title : 'About'});
 });
 
 app.use((req,res) => {
     res.status(404);
-    res.render('404');
+    res.render('404',{title : '404'});
 
 })
 
