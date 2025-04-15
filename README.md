@@ -1,6 +1,6 @@
 # Node Server Testing Practice
 
-This repository is created for testing and practicing a Node.js server. It is designed to help learn and experiment with basic server functionality, middleware, and error handling in Node.js.
+This repository is created for testing and practicing a Node.js server. It is designed to help learn and experiment with basic server functionality, middleware, and error handling in Node.js.It is not complete with design and some function.Just testing purpose.
 
 ## Overview
 
